@@ -25,8 +25,14 @@ function operate(operator, numOne, numTwo) {
         case '*':
             return (numOne * numTwo).toFixed(1)
         case '/':
-            if(numTwo === 0) reset(); alert(`please, don't divive by 0`); return ''
-            return (numOne / numTwo).toFixed(1)
+            if(numTwo === 0) {
+                 alert(`please, don't divive by 0`); 
+                 reset() 
+                 return ''
+            } else {
+                return (numOne / numTwo).toFixed(1)
+            }
+            
             
 
     }
